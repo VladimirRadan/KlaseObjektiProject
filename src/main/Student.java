@@ -8,9 +8,8 @@ public class Student {
     private int brIndexa;
     public static int godine;
 
-
     //konstruktori - mehanizmi za kreiranje objekata
-    public Student(){
+    Student(){
 
     }
 
@@ -25,12 +24,19 @@ public class Student {
         this.ime = ime;
         this.prezime = prezime;
         this.brIndexa = brIndexa;
+
+
+
     }
 
     //metode - ono sto objekat radi
     void ispis(String ime){
         System.out.println("Ime: " + this.ime + " prezime " + prezime + " broj indexa: " + brIndexa + " godine " + godine + ime);
     }
+
+
+
+
 
     String ispisObjekta(){
         return "Ime: " + ime + " prezime " + prezime + " broj indexa: " + brIndexa + " godine " + godine;
