@@ -4,7 +4,7 @@ public class Student {
     String ime;
     String prezime;
     int brIndexa;
-    int godine;
+    static int godine;
 
 
     //konstruktori - mehanizmi za kreiranje objekata
@@ -26,22 +26,24 @@ public class Student {
     }
 
     //metode - ono sto objekat radi
-    public void ispis(){
-        System.out.println("Ime: " + ime + " prezime " + prezime + " broj indexa: " + brIndexa + " godine " + godine);
+    public void ispis(String ime){
+        System.out.println("Ime: " + this.ime + " prezime " + prezime + " broj indexa: " + brIndexa + " godine " + godine + ime);
     }
 
     public String ispisObjekta(){
         return "Ime: " + ime + " prezime " + prezime + " broj indexa: " + brIndexa + " godine " + godine;
     }
 
-     public int sum (int x, int y){
-        return x + y;
-     }
 
-    public void sum2 (int x, int y){
-        System.out.println(x + y);
+
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "ime='" + ime + '\'' +
+                ", prezime='" + prezime + '\'' +
+                ", brIndexa=" + brIndexa +
+                ", godine=" + godine +
+                '}';
     }
-
-
-
 }
