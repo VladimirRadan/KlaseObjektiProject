@@ -1,3 +1,7 @@
+package main;
+
+import utils.Utils;
+
 import java.util.Scanner;
 
 public class Main {
@@ -6,12 +10,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Student student = new Student(); //Student@3f99bd52
-        student.ime = "Pera";
-        student.prezime = "Peric";
+        Student student = new Student(); //main.Student@3f99bd52
+        student.setIme("Pera");
+        student.setPrezime("Peric");
         //student.godine = 20;
-        student.brIndexa = 3213213;
+        student.setBrIndexa(3213213);
         Student.godine = 20;
+
+        System.out.println(student.getIme());
 
         scanner.next();
 
