@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static Scanner scanner = new Scanner(System.in);
+
 
     public static void main(String[] args) {
 
@@ -18,8 +18,6 @@ public class Main {
         Student.godine = 20;
 
         System.out.println(student.getIme());
-
-        scanner.next();
 
         //System.out.println(student.ime);
 
@@ -35,9 +33,9 @@ public class Main {
 
         Student niz[] = {student, student1, student2};
 
-        for (int i = 0; i < niz.length; i++) {
-            System.out.println(niz[i]);
-        }
+//        for (int i = 0; i < niz.length; i++) {
+//            System.out.println(niz[i]);
+//        }
 
 
 
@@ -47,7 +45,7 @@ public class Main {
 //        System.out.println(ispis);
 
 
-        System.out.println(Utils.generateRandomEmail());
+        //System.out.println(Utils.generateRandomEmail());
 
     }
 

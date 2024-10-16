@@ -8,12 +8,21 @@ public class Student {
     private int brIndexa;
     public static int godine;
 
+    {
+        System.out.println("ispis iz bloka");
+    }
+
+    static {
+        System.out.println("ispis iz static bloka");
+    }
+
     //konstruktori - mehanizmi za kreiranje objekata
     Student(){
-
+        System.out.println("ispis iz praznog konstruktora");
     }
 
     public Student(String i, String p, int brI, int g) {
+        System.out.println("ispis iz param 4 konstruktora");
         ime = i;
         prezime = p;
         brIndexa = brI;
@@ -21,12 +30,10 @@ public class Student {
     }
 
     public Student(String ime, String prezime, int brIndexa) {
+        System.out.println("ispis iz param 3 konstruktora");
         this.ime = ime;
         this.prezime = prezime;
         this.brIndexa = brIndexa;
-
-
-
     }
 
     //metode - ono sto objekat radi
@@ -42,14 +49,6 @@ public class Student {
         return "Ime: " + ime + " prezime " + prezime + " broj indexa: " + brIndexa + " godine " + godine;
     }
 
-    //napraviti metodu za ispis Studenata sa varargs
-    public int varargs(int... operands){
-        for (int i = 0; i < operands.length; i++) {
-            System.out.println(operands[i]);
-        }
-        return 0;
-    }
-    //get i set
 
 
     public String getIme() {
